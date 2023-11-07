@@ -352,7 +352,7 @@ if [ $armhf_build == 1 ] ; then
     catkin profile set ${profile:-armhf}
     catkin config --extend $ARMHF_CHROOT_DIR/opt/ros/$ros_version \
         --build-space ${workspace_path:-armhf/}build \
-        --install-space ${install_path:-${workspace_path:-armhf/}}opt/astrobee \
+        --install-space ${install_path:-${workspace_path:-armhf/}}opt/astrosee \
         --devel-space ${workspace_path:-armhf/}devel \
         --log-space ${workspace_path:-armhf/}logs \
         --install \
